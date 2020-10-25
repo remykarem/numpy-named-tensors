@@ -9,6 +9,8 @@ Here I introduce a manner to manipulate tensors using named axes.
 
 ---
 
+First we create a NumPy array.
+
 ```python
 >>> import numpy as np
 >>> x = np.random.randint(0, 10, (2, 3, 4, 4))
