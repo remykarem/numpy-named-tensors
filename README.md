@@ -4,9 +4,6 @@ Tensor manipulation in NumPy can be pretty troublesome
 if you are dealing with multiple dimensions. 
 Here I introduce a manner to manipulate tensors using named axes.
 
-**Note**: This is a prototype. There is a proper way of subclassing
-`numpy.ndarray` [here](https://numpy.org/doc/stable/user/basics.subclassing.html) and I'll do that soon.
-
 ---
 
 First we create a NumPy array.
