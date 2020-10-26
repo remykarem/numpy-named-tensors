@@ -5,7 +5,7 @@ if you are dealing with multiple dimensions.
 Here I introduce a manner to manipulate tensors using named axes.
 
 **Note**: This is a prototype. There is a proper way of subclassing
-`numpy.ndarray` and I'll do that soon.
+`numpy.ndarray` [here](https://numpy.org/doc/stable/user/basics.subclassing.html) and I'll do that soon.
 
 ---
 
@@ -26,11 +26,11 @@ Create a NamedTensor object.
 Swap the height `h` and width `w`:
 
 ```python
->>> img.transpose("b,c,w,h")
+>>> img.transpose("c,w,h,b")
 ```
 
 For every image `c,h,w`, get the mean across examples in the batch `b`.
 
 ```python
->>> img.forevery("c,h,w").mean("b")
+>>> img.mean("b")
 ```
