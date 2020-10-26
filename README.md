@@ -34,3 +34,11 @@ For every image `c,h,w`, get the mean across examples in the batch `b`.
 ```python
 >>> img.mean("b")
 ```
+
+Examples
+
+| NumPy     | NamedTensor     |
+|-----------|-----------------|
+| `x.mean(0)` | `x.mean("batch")` |
+|           |                 |
+|           |                 |
